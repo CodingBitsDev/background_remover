@@ -36,7 +36,7 @@ with mp_selfie_segmentation.SelfieSegmentation(
     # To improve segmentation around boundaries, consider applying a joint
     # bilateral filter to "results.segmentation_mask" with "image".
     condition = np.stack(
-      (results.segmentation_mask,) * 3, axis=-1) >  0.2
+      (results.segmentation_mask,) * 3, axis=-1) >  0.9
     # The background can be customized.
     #   a) Load an image (with the same width and height of the input image) to
     #      be the background, e.g., bg_image = cv2.imread('/path/to/image/file')
