@@ -3,7 +3,6 @@ Removes Background rom Webcam image for any cam service.
 
 ## Demo
 ![Demo](./sample.gif)
-![Demo](./sampleVideo.mp4)
 
 
 # Requirements
