@@ -18,6 +18,6 @@ sudo modprobe v4l2loopback devices=1 video_nr=5 card_label="v4l2loopback" exclus
 The script itself depends on
 `cv2` , `mediapipe`, `numpy` and `pyfakewebcam`.
 
-# RUN
+# Run
 Just run `run_stop.sh` to run to start it and again `run_stop.sh` to turn it off again.
 While running you just have to select the newly created camera as the webcam. In obs you can then apply a green color filter to remove the background.
