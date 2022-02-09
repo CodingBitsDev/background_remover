@@ -1,6 +1,10 @@
 # Background Remove
 Removes Background rom Webcam image for any cam service.
 
+## Demo
+[![Demo]](./sampleVideo.mp4)
+
+
 # Requirements
 For the script to work you need to create a loopback camera first.
 
