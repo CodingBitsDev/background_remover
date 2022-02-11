@@ -6,11 +6,11 @@ mp_drawing = mp.solutions.drawing_utils
 mp_selfie_segmentation = mp.solutions.selfie_segmentation
 
 width, height = 640, 480
-fake = fakeCam.FakeWebcam('/dev/video5', width, height)
+fake = fakeCam.FakeWebcam('/dev/video6', width, height)
 
 # For webcam input:
 BG_COLOR = (0, 255, 196) # gray
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(5)
 with mp_selfie_segmentation.SelfieSegmentation(
     model_selection=1) as selfie_segmentation:
   bg_image = None
@@ -36,7 +36,7 @@ with mp_selfie_segmentation.SelfieSegmentation(
     # To improve segmentation around boundaries, consider applying a joint
     # bilateral filter to "results.segmentation_mask" with "image".
     condition = np.stack(
-      (results.segmentation_mask,) * 3, axis=-1) >  0.2
+      (results.segmentation_mask,) * 3, axis=-1) >  0.4
     # The background can be customized.
     #   a) Load an image (with the same width and height of the input image) to
     #      be the background, e.g., bg_image = cv2.imread('/path/to/image/file')
