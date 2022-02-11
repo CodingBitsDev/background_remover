@@ -9,7 +9,7 @@ width, height = 640, 480
 fake = fakeCam.FakeWebcam('/dev/video5', width, height)
 
 # For webcam input:
-BG_COLOR = (0, 255, 0) # gray
+BG_COLOR = (0, 255, 196) # gray
 cap = cv2.VideoCapture(0)
 with mp_selfie_segmentation.SelfieSegmentation(
     model_selection=1) as selfie_segmentation:
